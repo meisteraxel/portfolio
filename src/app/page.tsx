@@ -3,11 +3,11 @@ import Link from "next/link";
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col p-24 mx-auto max-w-screen-lg">
+    <main className="flex min-h-screen flex-col px-24 py-10 mx-auto max-w-screen-lg">
       <nav className="flex gap-5 items-center mb-10">
         <Avatar className="size-16">
           <AvatarImage
-            src="/images/axel.jpg"
+            src="/images/axel.png"
             alt="Axel"
             className="object-cover"
           />
@@ -49,7 +49,35 @@ export default function Home() {
         </p>
       </section>
       <section className="mt-10">
-        <h3 className="text-2xl font-semibold">Latest Projects</h3>
+        <h3 className="text-2xl font-semibold mb-4">Latest Projects</h3>
+        <div className="grid grid-cols-2 gap-4">
+          <div className="rounded-lg overflow-hidden cursor-pointer border max-h-52 transition-all duration-500 time hover:opacity-75">
+            <Link href="https://www.rohmilch-kaufen.de" target="_blank">
+              <img src="/images/rohmilchkaufen.png" alt="" />
+            </Link>
+          </div>
+          <div className="rounded-lg overflow-hidden cursor-pointer border max-h-52 transition-all duration-500 hover:opacity-75">
+            <Link href="https://www.thefrontendquiz.com" target="_blank">
+              <img src="/images/frontendquiz.png" alt="" />
+            </Link>
+          </div>
+          <div className="rounded-lg overflow-hidden cursor-pointer border max-h-52 transition-all duration-500 hover:opacity-75">
+            <Link
+              href="https://meisteraxel.github.io/age-calculator-app-main/"
+              target="_blank"
+            >
+              <img src="/images/calculator.png" alt="" />
+            </Link>
+          </div>
+          <div className="rounded-lg overflow-hidden cursor-pointer border max-h-52 transition-all duration-500 hover:opacity-75">
+            <Link
+              href="https://expenses-tracker-axmst.netlify.app/"
+              target="_blank"
+            >
+              <img src="/images/tracker.png" alt="" />
+            </Link>
+          </div>
+        </div>
       </section>
     </main>
   );
