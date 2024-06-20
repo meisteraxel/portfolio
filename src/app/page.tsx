@@ -123,7 +123,7 @@ export default function Home() {
               aria-label="Rohmilch kaufen"
             >
               <motion.img
-                src="/images/rohmilchkaufen.png"
+                src="/images/rohmilchkaufen.webp"
                 alt=""
                 whileHover={{ opacity: 0.5, scale: 1.1 }}
               />
@@ -141,7 +141,7 @@ export default function Home() {
               aria-label="The Frontend Quiz"
             >
               <motion.img
-                src="/images/frontendquiz.png"
+                src="/images/frontendquiz.webp"
                 alt=""
                 whileHover={{ opacity: 0.5, scale: 1.1 }}
               />
@@ -159,7 +159,7 @@ export default function Home() {
               aria-label="Calculator App"
             >
               <motion.img
-                src="/images/calculator.png"
+                src="/images/calculator.webp"
                 alt=""
                 whileHover={{ opacity: 0.5, scale: 1.1 }}
               />
@@ -177,7 +177,7 @@ export default function Home() {
               aria-label="Expenses Tracker"
             >
               <motion.img
-                src="/images/tracker.png"
+                src="/images/tracker.webp"
                 alt=""
                 whileHover={{ opacity: 0.5, scale: 1.1 }}
               />
