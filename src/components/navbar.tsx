@@ -6,6 +6,23 @@ import { Menu, X } from "lucide-react";
 import { useState } from "react";
 import { motion } from "framer-motion";
 
+const variants = {
+  open: {
+    height: "auto",
+    transition: {
+      duration: 0.4,
+      ease: "easeInOut",
+    },
+  },
+  closed: {
+    height: 0,
+    transition: {
+      duration: 0.4,
+      ease: "easeInOut",
+    },
+  },
+};
+
 export default function Navbar() {
   const [openNav, setOpenNav] = useState(false);
 
@@ -48,17 +65,30 @@ export default function Navbar() {
       </div>
       <ModeToggle />
       <motion.div
-        className={`flex flex-col gap-8 absolute w-full top-24 left-0 py-6 text-center bg-[hsl(var(--background))] z-50 transition-all duration-300 ${
-          openNav ? "scale-100" : "scale-0"
-        } origin-top`}
+        initial={false}
+        animate={openNav ? "open" : "closed"}
+        variants={variants}
+        className="flex flex-col absolute w-full top-24 left-0 text-center bg-[hsl(var(--background))] z-50 origin-top overflow-hidden"
       >
-        <Link href="https://www.linkedin.com/in/axelmeister/" target="_blank">
+        <Link
+          href="https://www.linkedin.com/in/axelmeister/"
+          target="_blank"
+          className="py-4"
+        >
           LinkedIn
         </Link>
-        <Link href="https://github.com/meisteraxel" target="_blank">
+        <Link
+          href="https://github.com/meisteraxel"
+          target="_blank"
+          className="py-4"
+        >
           Github
         </Link>
-        <Link href="mailto:meister.axel@gmail.com" target="_blank">
+        <Link
+          href="mailto:meister.axel@gmail.com"
+          target="_blank"
+          className="py-4"
+        >
           Contact
         </Link>
       </motion.div>
