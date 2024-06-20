@@ -74,3 +74,19 @@
     @apply bg-background text-foreground;
   }
 }
+
+.nav-link::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 1px;
+  background-color: hsl(var(--foreground));
+  transition: width 0.3s ease;
+  z-index: 10;
+}
+
+.nav-link:hover::after {
+  width: 100%;
+}

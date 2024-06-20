@@ -69,7 +69,7 @@ export default function Home() {
       opacity: 1,
       translateY: 0,
       transition: {
-        type: "intertia",
+        ease: "easeInOut",
       },
     },
     hidden: { opacity: 0, translateY: 10 },
@@ -109,7 +109,7 @@ export default function Home() {
               <motion.img
                 src="/images/rohmilchkaufen.png"
                 alt=""
-                whileHover={{ opacity: 0.75 }}
+                whileHover={{ opacity: 0.5 }}
               />
             </Link>
           </motion.div>
@@ -123,7 +123,7 @@ export default function Home() {
               <motion.img
                 src="/images/frontendquiz.png"
                 alt=""
-                whileHover={{ opacity: 0.75 }}
+                whileHover={{ opacity: 0.5 }}
               />
             </Link>
           </motion.div>
@@ -140,7 +140,7 @@ export default function Home() {
               <motion.img
                 src="/images/calculator.png"
                 alt=""
-                whileHover={{ opacity: 0.75 }}
+                whileHover={{ opacity: 0.5 }}
               />
             </Link>
           </motion.div>
@@ -157,7 +157,7 @@ export default function Home() {
               <motion.img
                 src="/images/tracker.png"
                 alt=""
-                whileHover={{ opacity: 0.75 }}
+                whileHover={{ opacity: 0.5 }}
               />
             </Link>
           </motion.div>
