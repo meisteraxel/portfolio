@@ -76,11 +76,13 @@ export default function Home() {
   };
 
   return (
-    <main className="flex flex-col px-24 mx-auto max-w-screen-lg">
+    <main className="flex flex-col px-10 md:px-24 mx-auto max-w-screen-lg">
       <section>
-        <h1 className="text-6xl font-semibold mb-2">Frontend Developer</h1>
+        <h1 className="xxs:text-2xl xs:text-3xl sm:text-4xl md:text-5xl font-semibold mb-4 heading relative inline-block p-2">
+          Frontend Developer
+        </h1>
         <motion.p
-          className=" leading-loose ml-1"
+          className="ml-1 text-sm leading-relaxed md:text-base md:leading-loose"
           initial="hidden"
           animate="visible"
           variants={introText}
@@ -96,14 +98,14 @@ export default function Home() {
           ))}
         </motion.p>
       </section>
-      <section className="mt-10">
+      <section className="mt-16 mb-6">
         <h3 className="text-2xl font-semibold mb-4">Latest Projects</h3>
-        <div className="grid grid-cols-2 gap-4">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
           <motion.div
-            className="rounded-lg overflow-hidden cursor-pointer border max-h-52"
+            className="rounded-lg overflow-hidden cursor-pointer border max-h-60 md:max-h-52"
             initial={{ opacity: 0, translateY: 30 }}
             animate={{ opacity: 1, translateY: 0 }}
-            transition={{ type: "spring", delay: 0 }}
+            transition={{ type: "spring", delay: 4 }}
           >
             <Link href="https://www.rohmilch-kaufen.de" target="_blank">
               <motion.img
@@ -114,10 +116,10 @@ export default function Home() {
             </Link>
           </motion.div>
           <motion.div
-            className="rounded-lg overflow-hidden cursor-pointer border max-h-52"
+            className="rounded-lg overflow-hidden cursor-pointer border max-h-60 md:max-h-52"
             initial={{ opacity: 0, translateY: 30 }}
             animate={{ opacity: 1, translateY: 0 }}
-            transition={{ type: "spring", delay: 0.2 }}
+            transition={{ type: "spring", delay: 4.2 }}
           >
             <Link href="https://www.thefrontendquiz.com" target="_blank">
               <motion.img
@@ -128,10 +130,10 @@ export default function Home() {
             </Link>
           </motion.div>
           <motion.div
-            className="rounded-lg overflow-hidden cursor-pointer border max-h-52"
+            className="rounded-lg overflow-hidden cursor-pointer border max-h-60 md:max-h-52"
             initial={{ opacity: 0, translateY: 30 }}
             animate={{ opacity: 1, translateY: 0 }}
-            transition={{ type: "spring", delay: 0.4 }}
+            transition={{ type: "spring", delay: 4.4 }}
           >
             <Link
               href="https://meisteraxel.github.io/age-calculator-app-main/"
@@ -145,10 +147,10 @@ export default function Home() {
             </Link>
           </motion.div>
           <motion.div
-            className="rounded-lg overflow-hidden cursor-pointer border max-h-52"
+            className="rounded-lg overflow-hidden cursor-pointer border max-h-60 md:max-h-52"
             initial={{ opacity: 0, translateY: 30 }}
             animate={{ opacity: 1, translateY: 0 }}
-            transition={{ type: "spring", delay: 0.6 }}
+            transition={{ type: "spring", delay: 4.6 }}
           >
             <Link
               href="https://expenses-tracker-axmst.netlify.app/"

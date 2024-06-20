@@ -81,12 +81,32 @@
   bottom: 0;
   left: 0;
   width: 0;
-  height: 1px;
-  background-color: hsl(var(--foreground));
+  height: 100%;
+  background-color: white;
   transition: width 0.3s ease;
   z-index: 10;
+  mix-blend-mode: difference;
 }
 
 .nav-link:hover::after {
   width: 100%;
+}
+
+.heading::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 100%;
+  width: 0; /* Start with width 0 */
+  background-color: white;
+  z-index: 10;
+  mix-blend-mode: difference;
+  animation: heading-blend 2s ease forwards; /* Animation definition */
+}
+
+@keyframes heading-blend {
+  to {
+    width: 100%; /* End with width 100% */
+  }
 }
