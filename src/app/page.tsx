@@ -102,14 +102,14 @@ export default function Home() {
         </motion.p>
       </section>
       <section className="mt-16 mb-6">
-        <motion.h3
+        <motion.h2
           className="text-2xl font-semibold mb-4"
           initial={{ opacity: 0, translateY: 30 }}
           animate={{ opacity: 1, translateY: 0 }}
           transition={{ type: "spring", delay: 0 }}
         >
           Latest Projects
-        </motion.h3>
+        </motion.h2>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
           <motion.div
             className="rounded-lg overflow-hidden cursor-pointer border max-h-60 md:max-h-52"
@@ -117,7 +117,11 @@ export default function Home() {
             animate={{ opacity: 1, translateY: 0 }}
             transition={{ type: "spring", delay: 0.4 }}
           >
-            <Link href="https://www.rohmilch-kaufen.de" target="_blank">
+            <Link
+              href="https://www.rohmilch-kaufen.de"
+              target="_blank"
+              aria-label="Rohmilch kaufen"
+            >
               <motion.img
                 src="/images/rohmilchkaufen.png"
                 alt=""
@@ -131,7 +135,11 @@ export default function Home() {
             animate={{ opacity: 1, translateY: 0 }}
             transition={{ type: "spring", delay: 0.8 }}
           >
-            <Link href="https://www.thefrontendquiz.com" target="_blank">
+            <Link
+              href="https://www.thefrontendquiz.com"
+              target="_blank"
+              aria-label="The Frontend Quiz"
+            >
               <motion.img
                 src="/images/frontendquiz.png"
                 alt=""
@@ -148,6 +156,7 @@ export default function Home() {
             <Link
               href="https://meisteraxel.github.io/age-calculator-app-main/"
               target="_blank"
+              aria-label="Calculator App"
             >
               <motion.img
                 src="/images/calculator.png"
@@ -165,6 +174,7 @@ export default function Home() {
             <Link
               href="https://expenses-tracker-axmst.netlify.app/"
               target="_blank"
+              aria-label="Expenses Tracker"
             >
               <motion.img
                 src="/images/tracker.png"
