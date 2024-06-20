@@ -121,7 +121,7 @@ export default function Home() {
               <motion.img
                 src="/images/rohmilchkaufen.png"
                 alt=""
-                whileHover={{ opacity: 0.5 }}
+                whileHover={{ opacity: 0.5, scale: 1.1 }}
               />
             </Link>
           </motion.div>
@@ -135,7 +135,7 @@ export default function Home() {
               <motion.img
                 src="/images/frontendquiz.png"
                 alt=""
-                whileHover={{ opacity: 0.5 }}
+                whileHover={{ opacity: 0.5, scale: 1.1 }}
               />
             </Link>
           </motion.div>
@@ -143,7 +143,7 @@ export default function Home() {
             className="rounded-lg overflow-hidden cursor-pointer border max-h-60 md:max-h-52"
             initial={{ opacity: 0, translateY: 30 }}
             animate={{ opacity: 1, translateY: 0 }}
-            transition={{ type: "spring", delay: 1.2 }}
+            transition={{ type: "spring", delay: 1.1 }}
           >
             <Link
               href="https://meisteraxel.github.io/age-calculator-app-main/"
@@ -152,7 +152,7 @@ export default function Home() {
               <motion.img
                 src="/images/calculator.png"
                 alt=""
-                whileHover={{ opacity: 0.5 }}
+                whileHover={{ opacity: 0.5, scale: 1.1 }}
               />
             </Link>
           </motion.div>
@@ -169,7 +169,7 @@ export default function Home() {
               <motion.img
                 src="/images/tracker.png"
                 alt=""
-                whileHover={{ opacity: 0.5 }}
+                whileHover={{ opacity: 0.5, scale: 1.1 }}
               />
             </Link>
           </motion.div>
