@@ -8,7 +8,8 @@ const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "axmst",
-  description: "welcome to my portfolio",
+  description:
+    "Hi, I'm Axel, a Junior Frontend Developer from Germany. I specialize in HTML, CSS, JavaScript, React, NextJS, Tailwind CSS, and Webflow. Explore my portfolio of innovative landing pages and web applications.",
 };
 
 export default function RootLayout({
