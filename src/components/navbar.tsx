@@ -60,7 +60,7 @@ export default function Navbar() {
           Contact
         </Link>
       </div>
-      <div className="lg:hidden flex items-center">
+      <div className="hidden items-center">
         {!openNav ? <Menu onClick={toggleNav} /> : <X onClick={toggleNav} />}
       </div>
       <ModeToggle />

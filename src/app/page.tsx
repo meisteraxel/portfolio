@@ -185,6 +185,34 @@ export default function Home() {
           </motion.div>
         </div>
       </section>
+      <motion.div
+        className="lg:hidden flex text-sm gap-5 transition items-center mb-6 mx-auto"
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ delay: 1.8 }}
+      >
+        <Link
+          href="https://www.linkedin.com/in/axelmeister/"
+          target="_blank"
+          className="nav-link relative p-1"
+        >
+          LinkedIn
+        </Link>
+        <Link
+          href="https://github.com/meisteraxel"
+          target="_blank"
+          className="nav-link relative p-1"
+        >
+          Github
+        </Link>
+        <Link
+          href="mailto:meister.axel@gmail.com"
+          target="_blank"
+          className="nav-link relative p-1"
+        >
+          Contact
+        </Link>
+      </motion.div>
     </main>
   );
 }
