@@ -124,7 +124,7 @@ export default function Home() {
             >
               <motion.img
                 src="/images/rohmilchkaufen.webp"
-                alt=""
+                alt="Rohmilch kaufen"
                 whileHover={{ opacity: 0.5, scale: 1.1 }}
               />
             </Link>
@@ -142,7 +142,7 @@ export default function Home() {
             >
               <motion.img
                 src="/images/frontendquiz.webp"
-                alt=""
+                alt="The Frontend Quiz"
                 whileHover={{ opacity: 0.5, scale: 1.1 }}
               />
             </Link>
@@ -160,7 +160,7 @@ export default function Home() {
             >
               <motion.img
                 src="/images/calculator.webp"
-                alt=""
+                alt="Calculator App"
                 whileHover={{ opacity: 0.5, scale: 1.1 }}
               />
             </Link>
@@ -178,7 +178,7 @@ export default function Home() {
             >
               <motion.img
                 src="/images/tracker.webp"
-                alt=""
+                alt="Expenses Tracker"
                 whileHover={{ opacity: 0.5, scale: 1.1 }}
               />
             </Link>
@@ -186,7 +186,7 @@ export default function Home() {
         </div>
       </section>
       <motion.div
-        className="lg:hidden flex text-sm gap-5 transition items-center mb-6 mx-auto"
+        className="lg:hidden flex text-sm gap-5 items-center mb-6 mx-auto"
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ delay: 1.8 }}
